@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club auto Le meilleur de l'automobile - Location</title>
+        <link rel="stylesheet" href="CSS/normalize.css">
+        <link rel="stylesheet" href="CSS/filRouge.css">
+        <link rel="stylesheet" href="CSS/header.css">
+    </head>
+    <body>
+        <header id="mainHeader">
+            <div class="about smallCaps">
+                <div class="logoHeader">club auto</div>
+                <div class="iconTextContact">
+                    <div class="iconWrapper">
+                        <img src="/images/iconAddress.png" class="iconRound" alt="iconAdress">
+                    </div>
+                    <div class="textWrapper">
+                        <h2 class="noMargin orangeText">adresse:</h2>
+                        <p class="noMargin">avenue charles de gaulle <br>
+                        75000 paris</p>
+                    </div>
+                </div>
+                <div class="iconTextContact">
+                    <div class="iconWrapper">
+                        <img src="/images/iconPhone.png" class="iconRound" alt="iconTel">
+                    </div>
+                    <div class="textWrapper">
+                        <h2 class="noMargin orangeText">téléphone:</h2>
+                        <p class="noMargin">01 23 45 67 89</p>
+                    </div>
+                </div>
+                <ul class="openingTextContact noMargin">
+                    <li class="textWrapper">
+                        <h2 class="orangeText">ouverture:</h2>
+                        <p><strong>Du Lundi au Samedi</strong></p>
+                    </li>
+                    <li class="textWrapper">
+                        <h2 class="orangeText">horaires:</h2>
+                        <p><strong>De 9h à 17h</strong></p>
+                    </li>
+                </ul>                  
+                <div class="social">
+                    <a href="https://www.facebook.com"><img src="images/roundfb.png" alt="logoFcb"></a>
+                    <a href="https://www.twitter.com"><img src="images/roundtwt.png" alt="logoTwt"></a>
+                </div>
+            </div>
+            <nav id="mainNav">
+                <ul class="noList">
+                    <li class="smallCaps"><a href="index.html" title="Vers la page d'accueil du site 'Club Auto'">accueil</a></li>
+                    <li class="smallCaps"><a href="vente.html" title="Vers la page de vente de voitures de ce site">vente</a></li>
+                    <li class="smallCaps"><a href="location.html" title="Vers la page de location de voitures de ce site">location</a></li>
+                    <li class="smallCaps"><a href="contact.html" title="Vers la page de contact de ce site">contact</a></li>
+                </ul>
+            </nav>
+        </header><!--Ici se termine le #mainHeader-->
+        <section id="pageContent">
+            <header id="imgHeaderVente">
+                <h1 class="smallCaps noBack">location</h1>
+            </header>
+            <section class="twoCols">
+                <main id="leftCol">
+                    <section>
+                        <div class="ordre">
+                            <p class="smallCaps">ordre :</p>
+                            <select name="ordre" id="ordre-select">
+                                <option value="price-up">Prix: croissant</option>
+                                <option value="price-down">Prix: décroissant</option>
+                            </select>
+                        </div>
+                        <ul class="noList flexCol borders">
+                            <li class="flexRow"><img src="/images/vehicule2.jpg" alt="voiture" class="venteImg">
+                                <p class="noMargin"><strong>BMW 535i, Navi, Leather, ABS</strong> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus condimentum, porttitor dui quis, tempus felis. Nunc non nisl sed leo ornare lacinia. Morbi at tristique est. Mauris finibus rhoncus accumsan <br>
+                                <a href="bmw535i.html">>>En savoir plus<< </a></p>
+                                <button class="salesButton">20€/jour</button></li>
+                            <li class="flexRow"><img src="/images/vehicule2.jpg" alt="voiture" class="venteImg">
+                                <p class="noMargin"><strong>BMW 535i, Navi, Leather, ABS</strong> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus condimentum, porttitor dui quis, tempus felis. Nunc non nisl sed leo ornare lacinia. Morbi at tristique est. Mauris finibus rhoncus accumsan. <br>
+                                <a href="bmw535i.html">>>En savoir plus<< </a></p>
+                                <button class="salesButton">20€/jour</button></li>
+                            <li class="flexRow"><img src="/images/vehicule2.jpg" alt="voiture" class="venteImg">
+                                <p class="noMargin"><strong>BMW 535i, Navi, Leather, ABS</strong> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus condimentum, porttitor dui quis, tempus felis. Nunc non nisl sed leo ornare lacinia. Morbi at tristique est. Mauris finibus rhoncus accumsan.<br>
+                                <a href="bmw535i.html">>>En savoir plus<< </a></p>
+                                <button class="salesButton">20€/jour</button></li>
+                            <li class="flexRow"><img src="/images/vehicule2.jpg" alt="voiture" class="venteImg">
+                                <p class="noMargin"><strong>BMW 535i, Navi, Leather, ABS</strong> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu tellus condimentum, porttitor dui quis, tempus felis. Nunc non nisl sed leo ornare lacinia. Morbi at tristique est. Mauris finibus rhoncus accumsan.<br>
+                                <a href="bmw535i.html">>>En savoir plus<< </a></p>
+                                <button class="salesButton">20€/jour</button></li>
+                        </ul>
+                    </section>
+                </main>
+                <aside id="rightCol">
+                    <section id="sellSearch">
+                        <h1 class="noMargin"><img src="/images/icone-voiture.png" alt="iconCar">Rechercher</h1>
+                        <form action="search">
+                            <div>
+                                <select id="type">
+                                <option value="">Type</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="fuel">
+                                <option value="">Carburant</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="brand">
+                                <option value="">Marque</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="model">
+                                <option value="">Modèle</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="maxKm">
+                                <option value="">Kilométrage maximal</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="age">
+                                <option value="">Ancienneté</option>
+                                <option value="a">a</option>
+                                <option value="b">b</option>
+                                </select>
+                            </div>
+                            <div>Prix<input type="range" id="price" min="2000" max="80000"></div>
+                        <input type="reset" value="réinitialiser" class="smallCaps blueButton resetButton">
+                        </form>
+                    </section>
+                </aside>
+            </section>
+        </section><!--Ici se termine le #pageContent-->
+        <footer id="mainFooter">
+            <div class="divFooter">
+                <div class="divF1">
+                    <h1 class="smallCaps h1Footer"><strong class="titleColor">club</strong> auto</h1>
+                    <p class="greyFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum nisi a faucibus consectetur.</p>
+                </div>
+                <div class="divF2">
+                    <h1 class="smallCaps h1Footer">horaire d'ouverture</h1>
+                    <p><strong class="greyFont">Lundi - Samedi :</strong> 09:00 - 17:00 <br>
+                    <strong class="greyFont">Dimanche et jours fériés :</strong> Fermé</p>
+                </div>
+                <div class="divF3">
+                    <h1 class="smallCaps h1Footer">newsletter</h1>
+                    <input type="email" placeholder="Entrez votre email" name="email" id="email"> 
+                    <button><img src="images/send.png" alt="Envoyer"></button>
+                    <p class="greyFont">Inscrivez-vous pour recevoir les dernières offres</p>
+                </div> 
+                <div class="divF4">
+                    <h1 class="smallCaps h1Footer">reseaux sociaux</h1>
+                    <a href="https://www.facebook.com/"><img src="images/squarefb.png" alt="logoFcb"></a>
+                    <a href="https://www.twitter.com"><img src="images/squaretwt.png" alt="logoTwt"></a>
+                    <a href="https://www.instagram.com"><img src="images/insta.png" alt="logoInsta"></a>
+                    <a href="https://www.google.com"><img src="images/google.png" alt="logoGoogle"></a>
+                    <a href="https://www.youtube.com"><img src="images/ytb.png" alt="logoYtb"></a>
+                </div>
+            </div>
+            <p id="copyright">Copyright &copy; Club Auto - Tous droits réservés</p>
+        </footer><!--Ici se termine le #mainFooter-->
+    </body>
+</html>

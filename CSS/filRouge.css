@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --yellow: #FAB637;
+    --red: #FF4848;
+    --orange: #CC6119;
+    --twhite: #ECEFF3;
+    --black: #232628;
+    --blue: #6C98E1;
+    --grey: #a09898;   
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: var(--black);
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h1, h2{
+    font-family: Montserrat;
+}
+.noList{
+    display: flex;
+    list-style: none;
+}
+.smallCaps{
+    font-variant: small-caps;
+}
+.noMargin{
+    margin: 0;
+}
+.blueButton{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    border: var(--blue);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 2.5px;
+}
+.generalImg{
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* mainHeader */
+
+#mainHeader{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.about {   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: var(--white);
+    background-color: #232628;
+    height: 100px;
+}
+.iconRound {
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+    font-weight: bold;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+}
+.logoHeader{
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+}
+.logoHeader h1{
+    align-items: center;
+}
+.iconTextContact{
+    display: flex;
+    flex-direction: row;
+}
+.openingTextContact h2, .openingTextContact p {
+    display: inline;
+}
+.textWrapper h2{
+    font-size: 1rem; 
+}
+.iconWrapper{
+    padding-right: 10px;
+}
+.orangeText{
+    color: var(--orange);
+}
+.openingTextContact{
+    list-style: none;
+    padding: 0;
+}
+#mainNav{
+    /* display: flex;
+    justify-content: flex-end; */
+    display: none;
+    background-color: var(--twhite);
+    opacity: 0.9;
+    padding: 0 150px;
+    height: 53px;
+}
+#mainNav a{
+    text-decoration: none;
+    color: #232628;
+    background-color: var(--twhite);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 13px 20px;
+}
+#mainNav a:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+#menuToggle{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;    
+}
+/* pageContent */
+
+/* Index*/
+
+#imgHeader {
+    background-image: url(../images/vehicule1.jpg);
+    align-content: end;
+    height: 600px;
+    margin-top: -53px;
+}
+#pageContent header .backBlack {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 150px
+}
+#pageContent header h1 strong{
+    color: var(--orange);
+    font-weight: 700;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.conteneurFlex {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.half {
+    width: 50%;
+}
+.space{
+    padding: 40px 0;
+}
+.flexImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+.border{
+    border-bottom: 1px solid var(--twhite);
+    padding-bottom: 50px;
+}
+#pageContent #presentation h2 strong{
+    color: var(--orange);
+    font-weight: 700;
+}
+#pageContent .check{
+    list-style-image: url(/images/checkIcon.svg);
+    line-height: 1.7rem;
+}
+#pageContent #store{
+    background-image: url(../images/vente-location.jpg);
+}
+#pageContent #store .rentSell{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 130px 150px;
+}
+#pageContent #store .rentSell p{
+    color: var(--white);
+}
+#pageContent #store .rentSell .yellow{
+    background-color: var(--yellow);
+    opacity: 0.9;
+    padding: 30px;
+}
+#pageContent #store .rentSell .red{
+    background-color: var(--red);
+    opacity: 0.9;
+    padding: 30px;
+}
+#pageContent #store .recentVehicles{
+    padding: 0 150px;
+    background-color: var(--black);
+}
+.bmw {
+    padding-bottom: 20px;
+}
+#pageContent .whiteFont{
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0 10px 0;
+    border-bottom: solid 3px var(--orange);
+}
+#pageContent #store img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#pageContent #store .recentVehicles .grey{
+    background-color: rgba(70, 68, 68, 0.59);
+    padding: 15px 15px;
+}
+.price{
+    background-color: var(--blue);
+    padding: 5px 5px;
+}
+#pageContent #store a{
+    text-decoration: none;
+    color: var(--white);
+}
+#pageContent #store .recentVehicles h2{
+    font-size: 2rem;
+}
+#pageContent #store .recentVehicles button{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    border: var(--blue);
+    cursor: pointer;
+    text-align: left;
+}
+.row{
+    display: flex;
+    gap: 15px;
+    padding: 40px;
+}
+.row p{
+    color: white;
+    font-weight: bold;
+}
+.rowReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(64, 63, 63);
+    text-align: left;
+    padding: 20px;
+    gap: 20px;
+}
+.button1, .button2{
+    height: 40px;
+    width: 70px;
+    padding: 0;
+}
+.black{
+    color: var(--black);
+    font-weight: normal;
+}
+#pageContent .reasons{
+    padding: 0 100px 50px 100px;
+}
+#pageContent .reasons .lists{
+    display: flex;
+}
+#pageContent .reasons > h2{
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+#pageContent .reasons .logo{
+    height: 50px;
+    padding-right: 10px;
+}
+#pageContent .reasons > a{
+    display: block;
+    text-align: center;
+}
+#pageContent .smallerTitle{
+    font-size: 1.2rem;
+}
+#pageContent .recap{
+    display: flex;
+    background-image: url(../images/vehicule3.jpg);
+    padding: 75px 150px;
+}
+#pageContent .recap .yellow{
+    background-color: var(--yellow);
+    justify-content: start;
+    padding: 50px;
+    width: 450px;
+    height: 300px;
+    margin: 0;
+}
+#pageContent .recap h1{
+    margin: 0;
+    line-height: 0.8;
+}
+#pageContent .recap strong{
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* Vente/Location */
+
+#pageContent .twoCols{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 150px;
+}
+#imgHeaderVente{
+    background-image: url(/images/vente-location.jpg);
+    background-position: center;
+    align-content: center;
+    height: 200px;
+    margin-top: -53px;;
+}
+.noBack{
+    color: var(--white);
+    padding: 0 150px;
+}
+.ordre{
+    display: flex;
+    gap: 5px;
+    padding: 25px 0;
+}
+.ordre select{
+    background-color: var(--twhite);
+    border: none;
+    color: var(--grey);
+}
+#leftCol ul li strong{
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: var(--black);
+}
+#leftCol ul li p{
+    color: var(--grey);
+}
+#leftCol ul li a{
+    line-height: 3rem;
+    text-decoration: none;
+    color: var(--black);
+}
+.venteImg{
+    height: 200px;
+    width: 250px;
+}
+.flexCol{
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: solid 1px var(--twhite);
+}
+.borders li{
+    border-bottom: solid 1px var(--grey);
+    padding: 20px 0;
+}
+.flexRow{
+    display: flex;
+    gap: 20px;
+}
+.salesButton{
+    background-color: var(--blue);
+    border: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    height: 40px;
+    width: 250px;
+    text-align: right;
+}
+#sellSearch{
+    display: grid;
+    gap: 10px;
+    border: solid 1px var(--twhite);
+    box-shadow: 3px 3px 10px var(--twhite);
+    margin-top: -31px;
+}
+#sellSearch > form{
+    padding: 0 20px;
+}
+#sellSearch > form > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+#sellSearch select{
+    background-color: var(--twhite);
+    border: none;
+    padding: 10px;
+    color: var(--grey);
+}
+#sellSearch h1{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: justify;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+#sellSearch > form > div >p{
+    margin: 0;
+    font-weight: bold;
+}
+#sellSearch img{
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+}
+.resetButton{
+    padding: 5px 25px;
+    margin: 30px 0;
+}
+
+/* Contact */
+
+.contact{
+    padding: 100px 150px;
+    background-color: var(--twhite);
+}
+.imgContact{
+    background-image: url(/images/vehicule3.jpg);
+    background-position: center;
+}
+.contact > div{
+    background-color: var(--white);
+    padding: 40px;
+}
+.contact  div > h1{
+    margin: 0;
+    padding-bottom: 30px;
+}
+.contact form{
+    display: grid;
+}
+.contact form > div > div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.contact textarea{
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+}
+.contact label{
+    padding-bottom: 10px;
+}
+.contact input, textarea{
+    height: 40px;
+    padding-left: 20px;
+    background-color: var(--twhite);
+    border: none;
+}
+.contact button{
+    text-align: center;
+}
+
+/* BMW535i */
+
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    color: var(--grey);
+}
+.breadcrumb li+li:before{
+    content: "/\00a0";
+}
+.breadcrumb li a{
+    text-decoration: none;
+}
+.bmw535i{
+    padding: 25px 450px 25px 150px;
+}
+.bmw535i img{
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.bmw535i blockquote{
+    font-style: italic;
+    border-left: solid 2px var(--black);
+    padding-left: 30px;
+    margin-left: 0;
+}
+.bmw535i > .carOptions{
+    line-height: 2;
+    list-style-image: url(/images/checkIcon2.svg);
+    padding-left: 15px;
+}
+.bmw535i > .carOptions > strong{
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+.bmw535i > .carOptions > li{
+    font-size: 0.9rem;
+}
+.bmw535i #pageNav{
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+}
+.bmw535i #pageNav > ul{
+    padding-left: 0;
+    border-left: 3px solid var(--black);
+}
+.bmw535i #pageNav a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    padding: 15px 20px;
+}
+.bmw535i #pageNav a:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border-left: 2px solid (--black);
+    border-top: 3px solid var(--orange);
+}
+
+/* Footer */
+
+#mainFooter{
+    padding: 0 150px;
+    background-color: var(--black);
+    height: 200px;
+}
+#mainFooter .h1Footer{
+    margin: 0;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+#mainFooter .divFooter{
+    display: flex;
+    gap: 10px;
+}
+#mainFooter .divF1, .divF2, .divF3, .divF4{
+    width: 25%;
+    font-size: 0.7rem;
+} 
+#mainFooter .titleColor{
+    color: var(--blue);
+    font-weight: 700;
+}
+#mainFooter input{
+    height: 20px;
+    width: 200px;
+}
+#mainFooter button img{
+    height: 20px;
+    width: 20px;
+}
+#mainFooter .divF2{
+    color: var(--white);
+}
+#mainFooter .greyFont{
+    color: var(--grey);
+}
+#mainFooter > p{
+    text-align: center;
+    padding: 20px 0;
+    border-top: solid 1px var(--grey);
+    font-size: 0.7rem;
+    color: var(--grey);
+}
+
+@media screen and (min-width: 768px){
+    #mainHeader{
+        flex-direction: column;
+    }
+    #menuToggle{
+        display: none;
+    }
+    .about, #presentation{
+        padding: 30px 150px;
+
+    }
+    #mainNav{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #pageContent .twoCols{
+        grid-template-columns: 3fr 1fr;
+    }
+    .contact form{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .contact form button{
+        grid-column: 3;
+    }
+}
+
+@media screen and (min-width: 1200px){}
