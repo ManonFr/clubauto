@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/filRouge.css" />
   </head>
-  <!-- JPP !!!!!!!!! -->
   <body>
     <header id="mainHeader">
       <div class="about smallCaps">
@@ -90,10 +89,11 @@
         <img src="/images/hamburger.svg" alt="Ouvrir / Fermer le menu" />
       </button>
     </header>
+    <!--Ici se termine le #mainHeader-->
     <section id="pageContent">
-      <header id="imgHeaderVente" class="generalImg">
+      <section id="imgHeaderVente" class="generalImg">
         <h1 class="smallCaps noBack">vente</h1>
-      </header>
+      </section>
       <section class="twoCols">
         <main id="leftCol">
           <!-- Colonne de gauche -->
@@ -181,53 +181,76 @@
               <img src="/images/icone-voiture.png" alt="iconCar" />Rechercher
             </h1>
             <form action="search">
-              <div>
+              <div class="formField">
+                <label for="type" class="sr-only">Type</label>
                 <select id="type">
                   <option value="">Type</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
+
+              <div class="formField">
+                <label for="fuel" class="sr-only">Carburant</label>
                 <select id="fuel">
                   <option value="">Carburant</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
+
+              <div class="formField">
+                <label for="brand" class="sr-only">Marque</label>
                 <select id="brand">
                   <option value="">Marque</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
+
+              <div class="formField">
+                <label for="model" class="sr-only">Modèle</label>
                 <select id="model">
                   <option value="">Modèle</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
+
+              <div class="formField">
+                <label for="maxKm" class="sr-only">Kilométrage maximal</label>
                 <select id="maxKm">
                   <option value="">Kilométrage maximal</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
+
+              <div class="formField">
+                <label for="age" class="sr-only">Ancienneté</label>
                 <select id="age">
                   <option value="">Ancienneté</option>
                   <option value="a">a</option>
                   <option value="b">b</option>
                 </select>
               </div>
-              <div>
-                <p>Prix</p>
-                <input type="range" id="price" min="2000" max="80000" />
+
+              <div class="formField">
+                <label for="price">Prix</label>
+                <input
+                  type="range"
+                  id="price"
+                  min="2000"
+                  max="80000"
+                  value="2000"
+                />
+                <div class="priceValues">
+                  <span id="minPrice">2000</span
+                  ><span id="maxPrice">80000</span>
+                </div>
               </div>
-              <div>
+
+              <div class="formField">
                 <input
                   type="reset"
                   value="réinitialiser"

@@ -53,6 +53,18 @@ h1, h2{
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 /* mainHeader */
 
 #mainHeader{
@@ -106,13 +118,12 @@ h1, h2{
 }
 
 #mainNav{
-    /* display: flex;
-    justify-content: flex-end; */
     display: none;
     background-color: var(--twhite);
     opacity: 0.9;
     padding: 0 150px;
     height: 53px;
+    z-index: 2;
 }
 #mainNav a{
     text-decoration: none;
@@ -351,7 +362,20 @@ h1, h2{
     background-position: center;
     align-content: center;
     height: 200px;
-    margin-top: -53px;;
+    margin-top: -53px;
+    position: relative;
+}
+#imgHeaderVente::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Tu peux ajuster l'opacité ici */
+  z-index: 1;
+}
+
+#imgHeaderVente h1 {
+    position: relative;
+    z-index: 2;
 }
 .noBack{
     color: var(--white);
@@ -414,40 +438,61 @@ h1, h2{
     box-shadow: 3px 3px 10px var(--twhite);
     margin-top: -31px;
 }
-#sellSearch > form{
-    padding: 0 20px;
-}
-#sellSearch > form > div{
+#sellSearch form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 1rem;
+    padding: 1.5rem;
 }
+.formField {
+    display: flex;
+    flex-direction: column;
+}
+.formField label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
 #sellSearch select{
-    background-color: var(--twhite);
+    padding: 0.4em 0.6em;
     border: none;
-    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    background-color: var(--twhite);
     color: var(--grey);
 }
 #sellSearch h1{
     background-color: var(--black);
     color: var(--white);
-    text-align: justify;
     font-size: 1rem;
     padding: 10px 20px;
-}
-#sellSearch > form > div >p{
-    margin: 0;
-    font-weight: bold;
+    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 #sellSearch img{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: auto;
     padding-right: 20px;
+    margin: 10px;
 }
+.priceValues {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 0.5em;
+    padding: 0 0 0.2em;
+}
+.priceValues span {
+    background-color: var(--twhite);
+    color: var(--grey);
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+}
+
 .resetButton{
-    padding: 5px 25px;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 /* Contact */
