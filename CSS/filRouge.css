@@ -53,7 +53,6 @@ h1, h2{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -65,8 +64,8 @@ h1, h2{
   white-space: nowrap;
   border: 0;
 }
-/* mainHeader */
 
+/* mainHeader */
 #mainHeader{
     display: flex;
     flex-direction: column-reverse;
@@ -116,7 +115,6 @@ h1, h2{
     list-style: none;
     padding: 0;
 }
-
 #mainNav{
     display: none;
     background-color: var(--twhite);
@@ -143,10 +141,9 @@ h1, h2{
     background-color: transparent;
     border: none;    
 }
+
 /* pageContent */
-
 /* Index*/
-
 #imgHeader {
     background-image: url(../images/vehicule1.jpg);
     align-content: end;
@@ -191,24 +188,20 @@ h1, h2{
     color: var(--orange);
     font-weight: 700;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .checklist {
   list-style: none;
   padding-left: 0;
   margin-top: 20px;
 }
-
 .checklist li {
   position: relative;
   padding-left: 30px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .checklist li::before {
   content: "✔";
   position: absolute;
@@ -216,7 +209,6 @@ h1, h2{
   color: var(--orange);
   font-weight: bold;
 }
-
 #pageContent #store{
     background-image: url(../images/vente-location.jpg);
 }
@@ -351,7 +343,6 @@ h1, h2{
 }
 
 /* Vente/Location */
-
 #pageContent .twoCols{
     display: grid;
     grid-gap: 20px;
@@ -372,7 +363,6 @@ h1, h2{
   background-color: rgba(0, 0, 0, 0.5); /* Tu peux ajuster l'opacité ici */
   z-index: 1;
 }
-
 #imgHeaderVente h1 {
     position: relative;
     z-index: 2;
@@ -453,7 +443,6 @@ h1, h2{
     margin-bottom: 0.25rem;
     font-size: 0.95rem;
 }
-
 #sellSearch select{
     padding: 0.4em 0.6em;
     border: none;
@@ -490,13 +479,11 @@ h1, h2{
     padding: 0.3em 0.6em;
     border-radius: 4px;
 }
-
 .resetButton{
     margin-top: 30px;
 }
 
 /* Contact */
-
 .contact{
     padding: 100px 150px;
     background-color: var(--twhite);
@@ -547,13 +534,17 @@ h1, h2{
     gap: 1rem;
     padding: 0;
     list-style: none;
-    color: var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 1rem;
 }
 .breadcrumb li+li:before{
     content: "/\00a0";
 }
-.breadcrumb li a{
+.breadcrumb a,
+.breadcrumb a:visited,
+.breadcrumb a:active {
     text-decoration: none;
+    color: var(--grey);
 }
 .bmw535i{
     padding: 25px 450px 25px 150px;
@@ -564,9 +555,10 @@ h1, h2{
 }
 .bmw535i blockquote{
     font-style: italic;
-    border-left: solid 2px var(--black);
+    border-left: solid 2px var(--orange);
     padding-left: 30px;
     margin-left: 0;
+    color: var(--grey);
 }
 .bmw535i > .carOptions{
     line-height: 2;
@@ -580,30 +572,33 @@ h1, h2{
 .bmw535i > .carOptions > li{
     font-size: 0.9rem;
 }
-.bmw535i #pageNav{
+#pageNav{
     display: flex;
     background-color: var(--black);
     color: var(--white);
 }
-.bmw535i #pageNav > ul{
+#pageNav ul{
     padding-left: 0;
     border-left: 3px solid var(--black);
 }
-.bmw535i #pageNav a{
+#pageNav ul li a.activeTab {
+    background-color: var(--white);
+    border-top: 3px solid var(--orange) ;
+    color: var(--black);
+}
+#pageNav a{
     text-decoration: none;
     color: var(--white);
     font-weight: 600;
     padding: 15px 20px;
 }
-.bmw535i #pageNav a:hover{
+#pageNav a:hover{
     color: var(--black);
     background-color: var(--white);
-    border-left: 2px solid (--black);
     border-top: 3px solid var(--orange);
 }
 
 /* Footer */
-
 #mainFooter{
     padding: 0 150px;
     background-color: var(--black);
